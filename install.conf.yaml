@@ -1,0 +1,9 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    # TODO: .vimrc, .spacemacs, .oh-my-zsh/themes
+    ~/.zshrc: zshrc

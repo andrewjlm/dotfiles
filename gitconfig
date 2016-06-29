@@ -1,0 +1,5 @@
+[core]
+	excludesfile = /Users/andrew.mullins/dotfiles/.gitignore
+[user]
+	name = Andrew Mullins
+	email = andrew.mullins@puppet.com
