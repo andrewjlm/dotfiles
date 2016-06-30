@@ -5,5 +5,7 @@
 - clean: ['~']
 
 - link:
-    # TODO: .vimrc, .spacemacs, .oh-my-zsh/themes
+    # TODO: .vimrc, .oh-my-zsh/themes
     ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.spacemacs: spacemacs
