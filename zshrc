@@ -54,12 +54,15 @@ plugins=(common-aliases git osx jsontools vi-mode)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
+export PATH="$PATH:/Users/andrew.mullins/.cargo/bin"
+export RUST_SRC_PATH="/Users/andrew.mullins/repos/rust/src"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+export LC_ALL="en_US.UTF-8"
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
@@ -81,21 +84,21 @@ export EDITOR='vim'
 
 # Prompt format: \n # USER in DIRECTORY on git:BRANCH STATE \n $
 PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%{$fg[cyan]%}%n \
-%{$fg[white]%}in \
-%{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
+%B%F{blue}#%f%b \
+%F{cyan}%n%f \
+%F{white}in%f \
+%B%F{yellow}${current_dir}%f%b\
 ${hg_info}\
 ${git_info} \
-%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
+%B%F{red}→ %f%b"
 
 if [[ "$USER" == "root" ]]; then
     PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%{$bg[yellow]%}%{$fg[cyan]%}%n%{$reset_color%} \
-%{$fg[white]%}in \
-%{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
+%B%F{blue}#%f%b \
+%K{yellow}%F{cyan}%n%f%k \
+%F{white}in%f \
+%B%F{yellow}${current_dit}%f%b\
 ${hg_info}\
 ${git_info} \
-%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
+%B%F{red}→ %f%b"
 fi

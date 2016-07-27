@@ -28,6 +28,8 @@ values."
      emacs-lisp
      evil-snipe
      git
+     html
+     javascript
      ;; markdown
      python
      ;; org
@@ -36,6 +38,7 @@ values."
             shell-default-height 30
             shell-default-position 'right)
      ranger
+     rust
      ;; spell-checking
      syntax-checking
      ;; version-control
@@ -241,6 +244,7 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (setq-default rust-enable-racer t)
   )
 
 (defun dotspacemacs/user-config ()
