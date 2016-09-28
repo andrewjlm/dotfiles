@@ -1,5 +1,7 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/andrew.mullins/.oh-my-zsh
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,8 +60,6 @@ export PATH="$PATH:/Users/andrew.mullins/.cargo/bin"
 export RUST_SRC_PATH="/Users/andrew.mullins/repos/rust/src"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 export LC_ALL="en_US.UTF-8"
@@ -102,3 +102,4 @@ ${hg_info}\
 ${git_info} \
 %B%F{red}→ %f%b"
 fi
+
