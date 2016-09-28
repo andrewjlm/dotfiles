@@ -4,3 +4,6 @@
 [submodule "honukai"]
 	path = honukai
 	url = https://github.com/oskarkrawczyk/honukai-iterm-zsh
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/sorin-ionescu/prezto.git

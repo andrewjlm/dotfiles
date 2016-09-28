@@ -7,5 +7,9 @@
 - link:
     # TODO: .vimrc, .oh-my-zsh/themes
     ~/.zshrc: zshrc
+    ~/.zprofile: zprofile
+    ~/.zpreztorc: zpreztorc
+    ~/.zshenv: zshenv
+    ~/.zlogin: zlogin
     ~/.gitconfig: gitconfig
     ~/.spacemacs: spacemacs
