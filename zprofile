@@ -43,10 +43,17 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  ~/anaconda/bin
-  /usr/local/{bin,sbin}
-  $path
+    /usr/local/{bin,sbin}
+    $path
 )
+
+if [ -d "$HOME/anaconda/bin" ]; then
+    path+=("$HOME/anaconda/bin")
+fi
+
+if [ -d "$HOME/anaconda3/bin" ]; then
+    path+=("$HOME/anaconda3/bin")
+fi
 
 #
 # Less
