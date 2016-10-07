@@ -48,11 +48,11 @@ path=(
 )
 
 if [ -d "$HOME/anaconda/bin" ]; then
-    path+=("$HOME/anaconda/bin")
+    path=("$HOME/anaconda/bin" $path)
 fi
 
 if [ -d "$HOME/anaconda3/bin" ]; then
-    path+=("$HOME/anaconda3/bin")
+    path=("$HOME/anaconda3/bin" $path)
 fi
 
 #
