@@ -1,5 +1,29 @@
+[color]
+	ui = true
+	diff = true
+	status = true
+	branch = true
+	interactive = true
 [core]
-	excludesfile = /Users/andrew.mullins/dotfiles/.gitignore
+	editor = $EDITOR
+	excludesfile = /Users/andrew.mullins/dotfiles/gitignore
+	whitespace = fix
+	trustctime = false
+[format]
+	pretty = %C(bold yellow)%h%Creset %s %C(bold blue)[%an]%Creset %Cgreen(%cr)
+[apply]
+	whitespace = fix
+[help]
+	autocorrect = 5
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = preserve
+	default = current
 [user]
 	name = Andrew Mullins
 	email = andrew.mullins@puppet.com
+[alias]
+	undo = !git reset HEAD~1 --mixed
+	amend = !git commit --amend
+	graph = "!f() { git log --oneline --abbrev-commit --graph --decorate; }; f"
